@@ -171,7 +171,7 @@ El test se incluye en el fichero `tests/test_ex6.py`.
 La ejecución del test se realiza mediante el siguiente código:
 
 ```
-python -m unittest tests.test_ex6
+python -m unittest tests.test_ex6 -v
 ```
 ## Subir el proyecto a Github
 
@@ -192,7 +192,7 @@ git config --global user.email "computationalsociolinguistics@gmail.com"
 
 ### 3. Añadir los archivos 
 ```
-git add doc/ src/ tests/
+git add doc/ screenshots/ src/ tests/ LICENSE README.md requirements.txt
 ```
 
 ### 4. Crear el primer commit

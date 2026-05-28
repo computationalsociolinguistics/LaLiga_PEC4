@@ -38,6 +38,8 @@ class TestFunTotalGoals(unittest.TestCase):
         home_goals, away_goals, total_goals = fun_total_goals(test_dataframe_2)
 
         self.assertFalse(home_goals)
+        self.assertFalse(away_goals)
+        self.assertFalse(total_goals)
     
     def test_one_match(self):
         '''

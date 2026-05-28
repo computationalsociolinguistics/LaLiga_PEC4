@@ -144,6 +144,13 @@ También se pueden analizar módulos concretos:
 ```
 pylint src/exercises/ex1.py
 ```
+
+Se ha generado el documento `.pylintrc` con el siguiente código a fin de modificar algunos aspectos, como el número máximo de *statements* o de variables locales:
+
+```
+pylint --generate-rcfile | Out-File -Encoding utf8 .pylintrc
+```
+
 ## Generación de la documentación
 
 La documentación se ha generado automáticamente con la librería [*pydoc*](https://docs.python.org/es/3.9/library/pydoc.html). El archivo `docs_generator.py` genera los ficheros `.html` con la documentación de cada módulo del proyecto. Estos archivos están ubicados en la carpeta `doc/` del proyecto.
@@ -164,7 +171,7 @@ main.html
 
 ## Comprobación de los tests
 
-El proyecto incluye un test unitario para verificar el funcionamiento de la función `fun_total_goals()`, definida en el fichero `src/exercises/ex6.py`.
+El proyecto incluye una suite con tests para verificar el funcionamiento de la función `fun_total_goals()`, definida en el fichero `src/exercises/ex6.py`.
 
 El test se incluye en el fichero `tests/test_ex6.py`.
 
